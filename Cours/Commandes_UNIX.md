@@ -44,5 +44,7 @@
 	- pour enregistrer : CTRL + O puis ENTER
 	- pour quitter : CTRL + X
 
-- `cat` : Voir le contenu d'un fichier
+- `cat` : Afficher le contenu d'un fichier
   - `cat Dali.txt` affiche le contenu du fichier `Dali.txt`
+
+- `history` : Afficher l'historique des commandes déjà saisies dans le terminal
