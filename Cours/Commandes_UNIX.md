@@ -24,6 +24,13 @@
 	- ex : `ls Desktop` : on peut fournir un **argument**, en l'occurence ici pour connaître le contenu du dossier Desktop
 	- ex : `ls /home/student/Desktop` : en fournissant le chemin complet
 
+	**Options utiles pour `ls` :**
+	> `ls -lS` : pour trier par taille (du plus grand au plus petit)
+	>
+  	> `ls -lr` : pour inverser l'ordre d'affichage (du plus petit au plus grand)
+	>
+	> `ls -lt` : pour trier par date (du plus récent au plus ancien)
+
 - `tree` : Afficher l'arborescence des dossiers et fichiers du dossier courant
 	- ex : `tree -L 2` : pour limiter la profondeur de l'affichage à 2 niveaux
 
@@ -123,3 +130,21 @@ chmod -Rf 755 /var/www/html :
 ````
 
 - applique la commande précédente pour le dossier `/var/www/html` mais aussi tous ses enfants
+
+## Les commandes Git
+- `git status` : Voir l'état du dépôt Git
+- `git add .` : Ajouter tous les fichiers modifiés au prochain commit
+- `git commit -m "message"` : Faire un commit avec un message
+- `git log` : Voir l'historique des commits
+- `git branch` : Voir les branches du dépôt
+- `git switch nom-de-branche` : Changer de branche
+- `git switch -c nom-de-branche` : Créer et changer pour une nouvelle
+- `git merge nom-de-branche` : Fusionner une branche dans la branche courante
+- `git push -u origin nom-de-branche` : Envoyer les commits de la branche courante vers le dépôt distant
+- `git pull origin nom-de-branche` : Récupérer les commits du dépôt distant vers la branche courante
+- `git clone url-du-depot` : Cloner un dépôt distant dans un nouveau dossier
+- `git reset --hard HEAD~1` : Annuler le dernier commit (attention, les modifications seront perdues)
+- `git diff` : Voir les différences entre les fichiers modifiés et la dernière version commitée
+- `git remote -v` : Voir les dépôts distants configurés
+- `git fetch` : Récupérer les mises à jour des branches distantes sans les fusionner
+- `git rebase nom-de-branche` : Rejouer les commits de la branche courante sur une autre branche
